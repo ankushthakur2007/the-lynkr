@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    background-color: #000; /* Nav bar made black */
+    border-radius: 8px;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: "";
+    gap: 30px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff; /* Updated link color for dark nav */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ccc;
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #444;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+  }
+
+  .community-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .project-item,
+  .developer-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+
+  .project-item:hover,
+  .developer-item:hover {
+    background: #eaeaea;
+  }
+
+  .rank {
+    font-weight: bold;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .graph-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 400px;
+  }
+
+  .graph {
+    background: #f8f8f8;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+  }
+
+  /* Additional Responsive Styling */
+  @media (max-width: 768px) {
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
